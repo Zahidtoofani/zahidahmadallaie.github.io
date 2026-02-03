@@ -3,101 +3,512 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zahid Toofani Portfolio</title>
+    <title>Data Analyst Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-<!-- Hero Section -->
-<section id="hero">
-    <div class="container">
-        <h1>Hi, I�m Zahid Toofani</h1>
-        <p>BCA Graduate | Aspiring Data Analyst & IT Enthusiast</p>
-        <div class="buttons">
-            <a href="#" class="btn">Download Resume</a>
-            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+    <a href="#home">
+        <img src="C:\Users\HP\Pictures\mylogo.png" alt="Portfolio Logo" id="logo-img">
+    </a>
+</div>
+            
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#internships" class="nav-link">Virtual Internships</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#solving" class="nav-link">Problem Solving</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="home" id="home">
+    <div class="home-container">
+        <div class="home-content">
+            <div class="name-box animate-top">
+                <h1>ZAHID AHMAD ALLAIE</h1>
+                <h3>An Aspiring Data Analyst</h3>
+            </div>
+            
+            <p class="tagline animate-left">
+                Translating raw data into compelling stories. I treat every dashboard as a stage where numbers find their voice and insights take the lead.
+            </p>
+
+            <div class="btn-group animate-left">
+                <a href="https://drive.google.com/file/d/1GFUO-oh1-KVw1tU54nTM6LFHCbg9T-Mq/view" target="_blank" class="btn btn-cv">
+                    <span>Download CV</span>
+                    <i class="fas fa-download"></i>
+                </a>
+                <a href="https://wa.me/+971561083582?text=Hi%20Zahid,%20I%20saw%20your%20portfolio..." target="_blank" class="btn btn-msg">
+                    <span>Message Me</span>
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="home-img animate-right">
+            <div class="img-wrapper">
+                <img src="C:\Users\HP\Pictures\zahid.png" alt="Zahid Ahmad Allaie">
+            </div>
         </div>
     </div>
 </section>
 
-<!-- About Section -->
-<section id="about">
-    <div class="container">
-        <h2>About Me</h2>
-        <p>I am a BCA graduate with an interest in data analytics and IT. 
-           I enjoy working on projects using Excel, SQL, Power BI, and Python. 
-           I am eager to learn and grow in a professional environment.</p>
-    </div>
-</section>
 
-<!-- Skills Section -->
-<section id="skills">
-    <div class="container">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card"><h3>Excel</h3></div>
-            <div class="skill-card"><h3>SQL</h3></div>
-            <div class="skill-card"><h3>Power BI</h3></div>
-            <div class="skill-card"><h3>Python</h3></div>
-            <div class="skill-card"><h3>Communication</h3></div>
-            <div class="skill-card"><h3>Problem Solving</h3></div>
-            <div class="skill-card"><h3>Time Management</h3></div>
+
+
+
+
+
+
+<section class="skills" id="skills">
+    <h2 class="heading">Technical <span>Toolbox</span></h2>
+
+    <div class="skills-container">
+        <div class="skills-column">
+            <h3>Programming & Databases</h3>
+            <div class="skills-list">
+                <div class="skill-card">
+                    <i class="fab fa-python" style="color: #3776ab;"></i>
+                    <span>Python</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database" style="color: #00758f;"></i>
+                    <span>SQL (MySQL/PostgreSQL)</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-table" style="color: #1d6f42;"></i>
+                    <span>Advanced Excel</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills-column">
+            <h3>Data Visualization</h3>
+            <div class="skills-list">
+                <div class="skill-card">
+                    <i class="fas fa-chart-bar" style="color: #f28e2b;"></i>
+                    <span>Tableau</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-chart-pie" style="color: #f2c811;"></i>
+                    <span>Power BI</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-project-diagram" style="color: #ff6384;"></i>
+                    <span>Matplotlib / Seaborn</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills-column">
+            <h3>Analytical Methods</h3>
+            <div class="skills-list">
+                <div class="skill-card">
+                    <i class="fas fa-calculator" style="color: #6366f1;"></i>
+                    <span>Statistical Analysis</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-magnifying-glass-chart" style="color: #10b981;"></i>
+                    <span>Data Cleaning</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-lightbulb" style="color: #f59e0b;"></i>
+                    <span>Business Intelligence</span>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- Projects Section -->
-<section id="projects">
-    <div class="container">
-        <h2>Projects</h2>
-        <div class="project-card">
-            <h3>Sales Analysis Dashboard</h3>
-            <p>Tools: Excel, Power BI</p>
-            <p>Simple sales data analysis and visualization.</p>
+
+
+
+
+
+
+
+
+<section class="education" id="education">
+    <h2 class="heading">Academic <span>Journey</span></h2>
+
+    <div class="education-row">
+        <div class="edu-column">
+            <h3 class="title"><i class="fas fa-graduation-cap"></i> Degree</h3>
+            <div class="edu-box">
+                <div class="content">
+                    <div class="year"><i class="fas fa-calendar-alt"></i> 2018 - 2022</div>
+                    <h3>Bachelor of Computer Applications (BCA)</h3>
+                    <p>University Of Kashmir</p>
+                    <p class="edu-detail">Core focus on Data Structures, Database Management Systems (DBMS), and Programming Fundamentals & AI.</p>
+                </div>
+            </div>
         </div>
-        <div class="project-card">
-            <h3>Student Attendance Tracker</h3>
-            <p>Tools: Excel, Python</p>
-            <p>Tracked attendance and generated reports.</p>
+
+        <div class="edu-column">
+            <h3 class="title"><i class="fas fa-certificate"></i> Certifications</h3>
+            <div class="cert-container">
+                
+                <div class="cert-card">
+                    <div class="cert-img">
+                        <img src="C:\Users\HP\Pictures\sqlAdv.png" alt="SQL Intermediate">
+                    </div>
+                    <div class="cert-info">
+                        <h4>SQL (Intermediate)</h4>
+                        <a href="https://www.hackerrank.com/certificates/143c287fef49" target="_blank" class="view-btn">View Online <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-img">
+                        <img src="C:\Users\HP\Pictures\pyBasic.png" alt="Python Basics">
+                    </div>
+                    <div class="cert-info">
+                        <h4>Python Basics</h4>
+                        <a href="https://www.hackerrank.com/certificates/8d104a590e00" target="_blank" class="view-btn">View Online <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-img">
+                        <img src="C:\Users\HP\Pictures\sqlBasic.png" alt="SQL Basics">
+                    </div>
+                    <div class="cert-info">
+                        <h4>SQL Basics</h4>
+                        <a href="https://www.hackerrank.com/certificates/8f9cf4ba4808" target="_blank" class="view-btn">View Online <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-img">
+                        <img src="C:\Users\HP\Pictures\aicpe.png" alt="C/C++">
+                    </div>
+                    <div class="cert-info">
+                        <h4>C/C++ Programming</h4>
+                        <a href="YOUR_LINK_HERE" target="_blank" class="view-btn">View Online <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 </section>
 
-<!-- Testimonials Section -->
-<section id="testimonials">
-    <div class="container">
-        <h2>Testimonials</h2>
-        <div class="testimonial-card">
-            <p>"Zahid is hardworking and quick to learn."</p>
-            <h4>Mr. ABC � Lecturer � XYZ College</h4>
-            <a href="#" target="_blank">LinkedIn</a>
+
+
+
+
+
+
+
+
+
+<section class="internships" id="internships">
+    <h2 class="heading">Virtual <span>Internships</span></h2>
+
+    <div class="intern-wrapper">
+        <div class="intern-card">
+            <div class="intern-visual">
+                <img src="C:\Users\HP\Pictures\certificate.png" alt="Internship Certificate">
+                <div class="intern-label">Completed via Forage</div>
+            </div>
+            
+            <div class="intern-details">
+                <h3>Tata Data Visualisation: Empowering Business with Effective Insights </h3>
+                <p class="company-name">The Forage - January 2026</p>
+                
+                <div class="cv-snippet">
+                    <strong><i class="fas fa-pen-nib"></i> CV Snippet:</strong>
+                    <p>"Completed a simulation involving creating data visualizations for Tata Consultancy Services
+
+Prepared questions for a meeting with client senior leadership
+
+Created visuals for data analysis to help executives with effective decision making</p>
+                </div>
+
+                <div class="intern-skills">
+                    <span>Data Quality</span>
+                    <span>Data Modeling</span>
+                    <span>Storytelling</span>
+                </div>
+
+                <div class="intern-actions">
+                    <a href="https://www.theforage.com/achievements?virtualInternshipId=MyXvBcppsW2FkNYCX" class="btn-small">View Internship</a>
+                    <a href="https://www.theforage.com/completion-certificates/ifobHAoMjQs9s6bKS/MyXvBcppsW2FkNYCX_ifobHAoMjQs9s6bKS_696a570f8d5b9c666d1b4325_1769618087051_completion_certificate.pdf" class="btn-small btn-outline">View Certificate</a>
+                </div>
+            </div>
         </div>
-        <div class="testimonial-card">
-            <p>"Zahid shows great enthusiasm in learning new skills."</p>
-            <h4>Ms. DEF � Professor � XYZ College</h4>
-            <a href="#" target="_blank">LinkedIn</a>
+
+        <div class="intern-card">
+            <div class="intern-visual">
+                <img src="C:\Users\HP\Pictures\cert.png" alt="Internship Certificate">
+                <div class="intern-label">Completed via Forage</div>
+            </div>
+            
+            <div class="intern-details">
+                <h3>Deloitte Australia Data Analytics</h3>
+                <p class="company-name">The Forage - January 2026</p>
+                
+                <div class="cv-snippet">
+                    <strong><i class="fas fa-pen-nib"></i> CV Snippet:</strong>
+                    <p>Completed a Deloitte job simulation involving data analysis and forensic technology 
+
+Created a data dashboard using Tableau 
+
+Used Excel to classify data and draw business conclusions</p>
+                </div>
+
+                <div class="intern-skills">
+                    <span>Power BI</span>
+                    <span>KPI Tracking</span>
+                    <span>DAX</span>
+                </div>
+
+                <div class="intern-actions">
+                    <a href="" class="btn-small">View Internship</a>
+                    <a href="https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_696a570f8d5b9c666d1b4325_1768754976599_completion_certificate.pdf" class="btn-small btn-outline">View Certificate</a>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- Resume Section -->
-<section id="resume">
-    <div class="container">
-        <h2>Resume</h2>
-        <a href="#" class="btn">Download Resume</a>
+
+
+
+
+
+
+
+<section class="projects" id="projects">
+    <h2 class="heading">Latest <span>Projects</span></h2>
+
+    <div class="projects-grid">
+        
+        <div class="project-box">
+            <div class="project-media">
+                <img src="D:\data analysis projects\customer_CHURN\dash_bd.png" alt="Telecom Churn Analysis">
+                <div class="project-overlay">
+                    <div class="overlay-content">
+                        <h4>Impact: 81% Accuracy</h4>
+                        <p>Identified that Fiber Optic customers churn most in the first 12 months.</p>
+                        <div class="tech-tags">
+                            <span>Python</span><span>Pandas</span><span>Power BI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-text">
+                <h3>Telecom Customer Churn</h3>
+                <div class="project-links">
+                    <a href="GITHUB_LINK" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    <a href="#" class="view-link">Details <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-box">
+            <div class="project-media">
+                <img src="D:\data analysis projects\loan approval prediction\custt.png" alt="Loan Approval Prediction">
+                <div class="project-overlay">
+                    <div class="overlay-content">
+                        <h4>Impact: 91% Precision</h4>
+                        <p>Identified CIBIL score as the #1 predictor for loan risk assessment.</p>
+                        <div class="tech-tags">
+                            <span>Scikit-Learn</span><span>ML</span><span>Seaborn</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-text">
+                <h3>Loan Approval Prediction</h3>
+                <div class="project-links">
+                    <a href="GITHUB_LINK" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    <a href="#" class="view-link">Details <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-box">
+            <div class="project-media">
+                <img src="sales-preview.jpg" alt="Sales Analysis">
+                <div class="project-overlay">
+                    <div class="overlay-content">
+                        <h4>Role: Data Visualization</h4>
+                        <p>Built calculated measures to track YOY growth and product performance.</p>
+                        <div class="tech-tags">
+                            <span>Excel</span><span>Power BI</span><span>DAX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-text">
+                <h3>Sales Performance Tracking</h3>
+                <div class="project-links">
+                    <a href="#" class="view-link">Full Dashboard <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-box">
+            <div class="project-media">
+                <img src="D:\data analysis projects\hr_pj.png" alt="HR Analytics">
+                <div class="project-overlay">
+                    <div class="overlay-content">
+                        <h4>Goal: Workforce Optimization</h4>
+                        <p>Analyzed salary distribution and education levels across departments.</p>
+                        <div class="tech-tags">
+                            <span>Power BI</span><span>Data Cleaning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-text">
+                <h3>HR Workforce Insights</h3>
+                <div class="project-links">
+                    <a href="#" class="view-link">Full Dashboard <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
     </div>
 </section>
 
-<!-- Contact Section -->
-<section id="contact">
-    <div class="container">
-        <h2>Contact Me</h2>
-        <p>Email: your.email@example.com</p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
-        <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+
+
+
+
+
+
+<section class="problem-solving" id="solving">
+    <h2 class="heading">Problem <span>Solving</span></h2>
+
+    <div class="stats-container">
+        <div class="stats-card glass-morph animate-left">
+            <h3><i class="fas fa-database"></i> SQL Mastery</h3>
+            <div class="progress-box">
+                <div class="progress-info">
+                    <span>Easy Level</span>
+                    <span>50 / 51</span>
+                </div>
+                <div class="progress-bar"><div class="bar-fill" style="width: 98%;"></div></div>
+            </div>
+
+            <div class="progress-box">
+                <div class="progress-info">
+                    <span>Medium Level</span>
+                    <span>5 / 23</span>
+                </div>
+                <div class="progress-bar"><div class="bar-fill" style="width: 22%;"></div></div>
+            </div>
+            <p class="stats-footer">Continuous learning on SQL Free Platforms</p>
+        </div>
+
+        <div class="badges-card glass-morph animate-right">
+            <h3><i class="fas fa-award"></i> HackerRank Badges</h3>
+            <div class="badge-row">
+                <div class="badge-item gold">
+                    <div class="badge-icon"><i class="fas fa-code"></i></div>
+                    <div class="badge-info">
+                        <h4>SQL</h4>
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+
+                <div class="badge-item silver">
+                    <div class="badge-icon"><i class="fas fa-brain"></i></div>
+                    <div class="badge-info">
+                        <h4>Problem Solving</h4>
+                        <div class="stars">⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+
+                <div class="badge-item silver">
+                    <div class="badge-icon"><i class="fab fa-python"></i></div>
+                    <div class="badge-info">
+                        <h4>Python</h4>
+                        <div class="stars">⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
+
+
+
+
+
+
+
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+    <p class="contact-subtitle">Reach out to discuss opportunities or collaborations.</p>
+
+    <div class="contact-container">
+        <div class="contact-form-box">
+            <form action="#">
+                <div class="input-group">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <textarea name="message" cols="30" rows="6" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn-cv">Send Message <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+
+        <div class="contact-links-grid">
+            <a href="https://linkedin.com/in/zahid-ahmad-allaie-4b32391a2" target="_blank" class="contact-card linkedin">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/Zahidtoofani" target="_blank" class="contact-card github">
+                <i class="fab fa-github"></i>
+                <span>Github</span>
+            </a>
+            <a href="https://leetcode.com/u/ZahidAllaie123/" target="_blank" class="contact-card leetcode">
+                <i class="fas fa-code"></i>
+                <span>Leetcode</span>
+            </a>
+            <a href="https://www.hackerrank.com/profile/ZahidToofani786" target="_blank" class="contact-card hackerrank">
+                <i class="fab fa-hackerrank"></i>
+                <span>HackerRank</span>
+            </a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=zahidtoofani83406@gmail.com" class="contact-card mail">
+                <i class="fas fa-envelope"></i>
+                <span>Mail</span>
+            </a>
+            <a href="https://wa.me/+971561083582" target="_blank" class="contact-card whatsapp">
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
 </body>
 </html>
